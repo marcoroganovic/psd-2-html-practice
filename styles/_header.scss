@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  
+  overflow: hidden;  
   @media(max-width: 1300px) {
     background-position: center -20%;   
   }
@@ -24,7 +24,7 @@
 .birds-section {
   position: absolute;
   background: transparent;
-  max-width: 1920px;
+  max-width: 990px;
   width: 100%;
   height: 200px;
 
@@ -38,6 +38,10 @@
   width: 380px;
   height: 200px;
   animation: bounceOutRight 9s infinite;
+
+  @media(max-width: 1320px) {
+    animation: fadeOutRight 6s infinite;
+  }
 }
 
 .bird-images {
@@ -55,6 +59,10 @@
   width: 38px;
   height: 38px;
   z-index: 0;
+
+  @media(max-width: 992px) {
+    background-size: 90%;
+  }
 }
 
 .bird-1 {
