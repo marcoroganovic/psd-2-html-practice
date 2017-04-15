@@ -1,0 +1,45 @@
+#contact-modal .modal-dialog {
+  max-width: 550px;
+  background: #200013;
+  border-radius: 10px;
+  padding: 45px 22px;
+
+  input, textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 0.9em;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #510130;
+    border-radius: 4px;
+    background: transparent;
+    color: #510130;
+  }
+
+  a {
+    margin-top: 20px;
+  }
+}
+
+.modal-heading {
+  position: relative;
+  h3 {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  small {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.5em;
+    color: #510130;
+ 
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

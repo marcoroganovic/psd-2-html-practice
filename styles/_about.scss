@@ -1,0 +1,64 @@
+.about-us {
+  background: $about_purple;
+  background-image: url("assets/big-logo-background.png");
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  padding-bottom: 140px;
+  color: $text_color;
+}
+
+.scroll-top {
+  display: inline-block;
+  font-size: .8em;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  letter-spacing: 5px;
+  top: -30px;
+  z-index: 99;
+  animation: bounce 1s;
+  animation-iteration-count: 20;
+
+  &:after {
+    content: "\2193";
+    display: block;
+    font-size: 1em;
+  }
+
+  &:hover {
+    cursor: pointer;
+    animation: pulse 1s;
+  }
+}
+
+
+.section-button {
+  float: right;
+  @media(max-width: 991px) {
+    display: none;
+  }
+}
+
+.about-body-copy {
+  max-width: 95%;
+  width: 100%;
+  margin: 0 auto;
+
+  p {
+    margin-top: 68px;
+    text-align: center;
+    line-height: 200%;
+    margin-bottom: 30px;
+  }
+}
+
+.watch-more {
+  span {
+    display: none;
+  }
+
+  &:hover > span {
+    display: inline;
+  }
+}

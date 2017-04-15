@@ -1,0 +1,173 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  overflow: hidden;
+  overflow-y: scroll;
+  
+  @media(max-width: 720px) {
+    font-size: 16px;
+  }
+}
+
+
+h1 {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 3.6em;
+}
+
+
+h2 {
+  font-size: 1.8em;
+}
+
+
+p {
+  font-weight: normal;
+}
+
+
+a:visited {
+  outline: none;
+}
+
+a:active {
+  color: inherit;
+}
+
+
+.section-title {
+  display: table;
+  @media(max-width:992px) {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.section-name {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #fff;
+}
+
+
+.section-number,
+.section-number-opposite {
+  font-size: 5.5em;
+  color: $text_color;
+  font-weight: bold;
+  margin-right: 25px;
+
+  @media(max-width: 992px) {
+    text-align: center;
+  }
+}
+
+.section-number-opposite {
+  color: #510130;
+  margin-right: 0;
+  margin-left: 15px;
+}
+
+
+.section-button {
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+
+.default-button,
+.default-button-offset,
+.default-button-ghost,
+.default-button-filled {
+  padding: 10px 55px;
+  font-size: $font_size - 5;
+  text-transform: uppercase;
+  background: transparent;
+  color: #510130;
+  font-weight: bold;
+  border: 2px solid #510130;
+
+  &:hover {
+    background: $text_color;
+    color: #fff;
+    border: 2px solid $text_color;
+    animation: pulse 1s;
+  }
+}
+
+.default-button-filled {
+  background: $text_color;
+  color: #fff;
+  border: 2px solid $text_color;
+  &:hover {
+    animation: pulse 1s;
+  }
+}
+
+.default-button-ghost:hover {
+  border-color: #c9223e;
+  color: #fff;
+  animation: pulse 1s;
+}
+
+.default-button-offset {
+  margin-top: 40px;
+}
+
+.orange-button {
+  background: $orange_button;
+  border-color: transparent;
+  color: #fff;
+  &:hover {
+    background: #ffc089;
+  }
+}
+
+
+.project-case-study-button {
+  @media(max-width: 992px) {
+    text-align: center;
+  }
+}
+
+
+.description {
+  font-weight: bold;
+}
+
+
+.tooltip {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.tooltip-inner,
+.tooltip-arrow {
+  background: transparent;
+  border: 2px solid #1a191a;
+
+  @media(max-width: 992px) {
+    display: none;
+  }
+}
+
+
+.pull-left,
+.pull-right {
+  @media(max-width: 992px) {
+    float: none !important;
+  }
+}
+
+.container {
+  max-width: 1170px;
+}

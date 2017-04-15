@@ -1,0 +1,11 @@
+section#contact-modal.modal.fade
+  .modal-dialog.text-center
+    .modal-heading
+      h3 Send a message
+      small(data-dismiss="modal")  &times;
+    form
+      input(type="text" name="name" placeholder="Name")
+      input(type="email" name="email" placeholder="Email")
+      textarea(name="message" placeholder="Message")
+      button(type="submit" value="Send" name="send" class="btn default-button-filled")
+        | Send a message
